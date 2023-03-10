@@ -1,0 +1,110 @@
+<div style="display: block;margin-top:50px;">
+  <label for=""> <h5>Client Activities</h5></label>
+  <hr />
+  <div class="row">
+    <div class="col-md-2 text-right" style="font-size:12px">
+      <span style="color:#1277A3">Enrollment</span>
+    </div>
+    <div class="col-md-5 text-center">
+      <span style="color:#F7A444;margin-left:40%">Request Submission</span>
+    </div>
+    <div class="col-md-3 text-right">
+      <span style="color:#7C1CC8">Payment Processing</span>
+    </div>
+    <div class="col-md-2 text-right">
+      <span style="color:#D18BF2">Completion</span>
+    </div>
+  </div>
+  <table>
+    <tr>
+      <td>
+        <div
+          style="
+border-left: 2px solid #ffcece;
+height: 35%;
+margin:0% 10% 10% 20%;
+position: absolute;
+z-index: 100 !important;
+"
+        ></div>
+        <div
+          style="
+border-left: 2px solid #ffcece;
+height: 35%;
+margin: 0% 10% 10% 58%;
+position: absolute;
+z-index: 100 !important;
+"
+        ></div>
+        <div
+          style="
+border-left: 2px solid #ffcece;
+height: 35%;
+margin: 0% 10% 10% 82%;
+position: absolute;
+z-index: 100 !important;
+"
+        ></div>
+      </td>
+    </tr>
+  </table>
+
+  <canvas
+    style="margin-top:0px;"
+    #myCanvas2
+    baseChart
+    width="400"
+    height="75"
+    [datasets]="lineChartData"
+    [labels]="lineChartLabels"
+    [options]="lineChartOptions"
+    [colors]="lineChartColors"
+    [legend]="lineChartLegend"
+    [chartType]="lineChartType"
+    [plugins]="lineChartPlugins"
+  >
+  </canvas>
+  <div
+    style=" border: 0px solid black;
+margin: 1px;
+padding: 1px 1px;
+text-align: right;"
+  >
+    <div
+      style="display: inline-block;
+border: 1px solid grey;
+padding: 8px 8px;
+vertical-align: middle;
+background:#E2F8B5"
+    ></div>
+    <span
+      style="font-size:12px;font-family: 'RobotoRegular', Helvetica, Arial, sans-serif;"
+    >
+      Happy
+    </span>
+    <div
+      style="display: inline-block;
+border: 1px solid grey;
+padding: 8px 8px;
+vertical-align: middle;
+background:#F0F1C7;"
+    ></div>
+    <span
+      style="font-size:12px;font-family: 'RobotoRegular', Helvetica, Arial, sans-serif;"
+    >
+      Neutral
+    </span>
+    <div
+      style="display: inline-block;
+border: 1px solid grey;
+padding: 8px 8px;
+vertical-align: middle;
+background:#FFE9E9;"
+    ></div>
+    <span
+      style="font-size:12px;font-family: 'RobotoRegular', Helvetica, Arial, sans-serif;"
+    >
+      Sad</span
+    >
+  </div>
+</div>
